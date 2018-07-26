@@ -1,0 +1,12 @@
+# test pojo param
+datasource:
+  url: jdbc:mysql://keyllo.com:2778/test
+  driver: com.mysql.jdbc.Driver
+  username: mintq_sqoopuixxx
+  password: ^8asdjhwHjkLsJ_987A
+
+
+# test param's quotation
+company: keyllo
+create-time: 2018-07
+ctx: ${company} | ${create-time}
