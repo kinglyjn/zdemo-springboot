@@ -61,10 +61,10 @@
 
 	<build>
 		<plugins>
+			<!-- MVN热部署插件 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- MVN热部署插件 -->
 				<!-- 
 				<dependencies>
                     <dependency>
@@ -74,6 +74,22 @@
                     </dependency>
                 </dependencies>
                	-->
+			</plugin>
+			
+			<!-- 全量包插件 -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.demo.ZdemoEsHbaseSpringbootApplication</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
