@@ -11,3 +11,8 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
+      
+# set server
+server:
+  servlet:
+    context-path: /zdemo-springboot
