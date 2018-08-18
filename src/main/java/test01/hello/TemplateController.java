@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  */
 @Controller
-@RequestMapping("/test01")
+@RequestMapping("/testunit01")
 public class TemplateController {
 
 	@RequestMapping(value="/index", method=RequestMethod.GET)
